@@ -7,7 +7,7 @@ metadata:
 spec:
   nodes:
     n0:
-      ip: $GENESIS
+      ip: GENESIS
       kubernetes_interface: enp0s8
       roles:
         - master
@@ -15,21 +15,21 @@ spec:
       additional_labels:
         - beta.kubernetes.io/arch=amd64
     n1:
-      ip: $MASTER_1
+      ip: MASTER_1
       kubernetes_interface: enp0s8
       roles:
         - master
       additional_labels:
         - beta.kubernetes.io/arch=amd64
     n2:
-      ip: $MASTER_2 
+      ip: MASTER_2 
       kubernetes_interface: enp0s8
       roles:
         - master
       additional_labels:
         - beta.kubernetes.io/arch=amd64
     n3:
-      ip: $WORKER
+      ip: WORKER
       kubernetes_interface: enp0s8
       roles:
         - worker
