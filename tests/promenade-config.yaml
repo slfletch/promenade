@@ -8,7 +8,7 @@ spec:
   nodes:
     n0:
       ip: GENESIS
-      kubernetes_interface: enp0s8
+      kubernetes_interface: GENESIS_IFACE
       roles:
         - master
         - genesis
@@ -16,21 +16,21 @@ spec:
         - beta.kubernetes.io/arch=amd64
     n1:
       ip: MASTER_1
-      kubernetes_interface: enp0s8
+      kubernetes_interface: MASTER_1_IFACE
       roles:
         - master
       additional_labels:
         - beta.kubernetes.io/arch=amd64
     n2:
       ip: MASTER_2 
-      kubernetes_interface: enp0s8
+      kubernetes_interface: MASTER_2_IFACE
       roles:
         - master
       additional_labels:
         - beta.kubernetes.io/arch=amd64
     n3:
       ip: WORKER
-      kubernetes_interface: enp0s8
+      kubernetes_interface: WORKER_IFACE
       roles:
         - worker
       additional_labels:
