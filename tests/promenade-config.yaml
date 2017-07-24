@@ -30,7 +30,7 @@ spec:
         - beta.kubernetes.io/arch=amd64
     n3:
       ip: WORKER
-      kubernetes_interface: WIFACE
+      kubernetes_interface: W_IFACE
       roles:
         - worker
       additional_labels:
